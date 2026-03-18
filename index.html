@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Planify helps university students organize their study schedule, track progress, and stay focused with a simple and intuitive planner.">
+    <meta name="theme-color" content="#6B5FB0">
+
+    <title>Planify — Plan Your Study. Achieve Your Goals.</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets\styles\style.css">
+    <link rel="stylesheet" href="assets\styles\landing.css">
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ======================================
+      NAVBAR
+  ====================================== -->
+    <header class="navbar" role="banner">
+        <div class="navbar-container">
+
+            <a class="navbar-logo" href="index.html" aria-label="Planify home">
+                <div class="logo-mark" aria-hidden="true">
+                    <div class="logo-mark-inner">
+                        <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                    </div>
+                    <span class="logo-dot"></span>
+                </div>
+                <span class="logo-text">Plan<span>ify</span></span>
+            </a>
+
+            <nav class="navbar-nav" id="navbar-nav" aria-label="Main navigation">
+                <ul class="nav-list" role="list">
+                    <li><a class="nav-link" href="#features">Features</a></li>
+                    <li><a class="nav-link" href="#how-it-works">How it works</a></li>
+                    <li><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li><a class="nav-link" href="#resources">Resources</a></li>
+                </ul>
+            </nav>
+
+            <div class="navbar-actions">
+                <a class="btn btn-ghost" href="signin.html">Sign in</a>
+                <a class="btn btn-primary" href="signup.html">Get started</a>
+            </div>
+
+            <button class="navbar-toggle js-menu-toggle" id="js-menu-toggle" aria-expanded="false" aria-controls="navbar-nav" aria-label="Toggle navigation menu">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+
+        </div>
+    </header>
+
+      <!-- ======================================
+      MAIN CONTENT
+      ====================================== -->
+    <main id="main">
+
+        <!--  Hero -->
+        <section class="hero" id="hero" aria-labelledby="hero-heading">
+            <div class="container">
+                <div class="hero-content fade-up">
+
+                    <span class="hero-badge">
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        Trusted by 10,000+ students
+                    </span>
+
+                    <h1 class="hero-heading" id="hero-heading">
+                        Plan Your Study.<br>
+                        Achieve Your Goals.
+                    </h1>
+
+                    <p class="hero-description">
+                        Planify helps university students organize their subjects, build weekly schedules, manage daily tasks, and track their progress — all in one calm, focused space.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="btn btn-primary btn-large" href="signup.html">
+                            Start Planning
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <a class="btn btn-ghost btn-large" href="#how-it-works">
+                            See how it works
+                        </a>
+                    </div>
+
+                    <div class="hero-stats" aria-label="Key statistics">
+                        <div class="hero-stat">
+                            <strong>10k+</strong>
+                            <span>Active students</span>
+                        </div>
+                        <div class="hero-stat-divider" aria-hidden="true"></div>
+                        <div class="hero-stat">
+                            <strong>4.9</strong>
+                            <span>Average rating</span>
+                        </div>
+                        <div class="hero-stat-divider" aria-hidden="true"></div>
+                        <div class="hero-stat">
+                            <strong>Free</strong>
+                            <span>To get started</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="hero-visual fade-up" aria-hidden="true">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-card hero-card-tasks">
+                            <div class="mini-card-header">
+                                <i class="fa-solid fa-list-check"></i>
+                                <span>Today's tasks</span>
+                            </div>
+                            <ul class="mini-task-list" role="list">
+                                <li class="mini-task is-done">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span>Read Chapter 5 — Biology</span>
+                                </li>
+                                <li class="mini-task is-done">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span>Math problem set</span>
+                                </li>
+                                <li class="mini-task">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <span>Essay outline — English</span>
+                                </li>
+                                <li class="mini-task">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <span>Review lecture notes</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="hero-card hero-card-progress">
+                            <div class="mini-card-header">
+                                <i class="fa-solid fa-chart-line"></i>
+                                <span>Weekly progress</span>
+                            </div>
+                            <div class="mini-progress-bar" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" aria-label="Weekly progress 72%">
+                                <div class="mini-progress-fill" style="width: 72%"></div>
+                            </div>
+                            <p class="mini-progress-label">72% of weekly goal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem -->
+        <section class="problem" id="problem" aria-labelledby="problem-heading">
+            <div class="container">
+
+                <div class="section-label fade-up">The challenge</div>
+                <h2 class="section-heading fade-up" id="problem-heading">
+                    Sound familiar?
+                </h2>
+                <p class="section-description fade-up">
+                    Most students struggle with the same things. Planify is designed to solve all of them.
+                </p>
+
+                <div class="problem-grid">
+                    <article class="problem-card fade-up" aria-labelledby="problem-1">
+                        <div class="problem-icon" aria-hidden="true">
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                        </div>
+                        <h3 class="problem-title" id="problem-1">Poor time management</h3>
+                        <p class="problem-text">
+                            You have five subjects, three deadlines, and no idea where to start. Time slips away and nothing gets done.
+                        </p>
+                    </article>
+
+                    <article class="problem-card fade-up" aria-labelledby="problem-2">
+                        <div class="problem-icon" aria-hidden="true">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <h3 class="problem-title" id="problem-2">Overwhelm and burnout</h3>
+                        <p class="problem-text">
+                            Too much to study, not enough structure. Without a clear plan, everything feels urgent and nothing gets finished.
+                        </p>
+                    </article>
+
+                    <article class="problem-card fade-up" aria-labelledby="problem-3">
+                        <div class="problem-icon" aria-hidden="true">
+                            <i class="fa-solid fa-chart-bar"></i>
+                        </div>
+                        <h3 class="problem-title" id="problem-3">No way to track progress</h3>
+                        <p class="problem-text">
+                            You study hard but can not tell if you are actually making progress. There is no feedback loop to keep you motivated.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Features-->
+        <section class="features" id="features" aria-labelledby="features-heading">
+            <div class="container">
+
+                <div class="section-label fade-up">What you get</div>
+                <h2 class="section-heading fade-up" id="features-heading">
+                    Everything you need to study smarter
+                </h2>
+                <p class="section-description fade-up">
+                    Four core tools, one simple interface. No clutter, no confusion.
+                </p>
+
+                <div class="features-grid">
+
+                    <article class="feature-card fade-up" aria-labelledby="feature-1">
+                        <div class="feature-card-icon" aria-hidden="true">
+                            <i class="fa-solid fa-calendar-week"></i>
+                        </div>
+                        <h3 class="feature-card-title" id="feature-1">Weekly Planner</h3>
+                        <p class="feature-card-text">
+                            Build your weekly study schedule in minutes. Assign subjects to time slots and see your entire week at a glance.
+                        </p>
+                        <a class="feature-card-link" href="schedule.html" aria-label="Learn more about Weekly Planner">
+                            Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </article>
+
+                    <article class="feature-card fade-up" aria-labelledby="feature-2">
+                        <div class="feature-card-icon feature-card-icon-accent" aria-hidden="true">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3 class="feature-card-title" id="feature-2">Track Progress</h3>
+                        <p class="feature-card-text">
+                            Visual dashboards show how far you have come. Celebrate wins, spot gaps, and stay motivated all semester.
+                        </p>
+                        <a class="feature-card-link" href="progress.html" aria-label="Learn more about Track Progress">
+                            Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </article>
+
+                    <article class="feature-card fade-up" aria-labelledby="feature-3">
+                        <div class="feature-card-icon" aria-hidden="true">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <h3 class="feature-card-title" id="feature-3">Manage Subjects</h3>
+                        <p class="feature-card-text">
+                            Organize all your courses and topics in one place. Add notes, resources, and deadlines per subject.
+                        </p>
+                        <a class="feature-card-link" href="subjects.html" aria-label="Learn more about Manage Subjects">
+                            Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </article>
+
+                    <article class="feature-card fade-up" aria-labelledby="feature-4">
+                        <div class="feature-card-icon feature-card-icon-accent" aria-hidden="true">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <h3 class="feature-card-title" id="feature-4">Stay Focused</h3>
+                        <p class="feature-card-text">
+                            Daily task lists and a built-in Pomodoro timer help you stay on track and protect your study time.
+                        </p>
+                        <a class="feature-card-link" href="tasks.html" aria-label="Learn more about Stay Focused">
+                            Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!--  How it works -->
+        <section class="how-it-works" id="how-it-works" aria-labelledby="how-heading">
+            <div class="container">
+
+                <div class="section-label fade-up">Simple process</div>
+                <h2 class="section-heading fade-up" id="how-heading">
+                    Up and running in three steps
+                </h2>
+                <p class="section-description fade-up">
+                    No setup headaches. No learning curve. Just open Planify and start.
+                </p>
+
+                <ol class="steps-list" role="list">
+
+                    <li class="step-item fade-up">
+                        <div class="step-number" aria-hidden="true">01</div>
+                        <div class="step-icon" aria-hidden="true">
+                            <i class="fa-solid fa-book"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3 class="step-title">Add your subjects</h3>
+                            <p class="step-text">Enter your courses, topics, and any upcoming deadlines. Takes less than two minutes.</p>
+                        </div>
+                    </li>
+
+                    <li class="step-item fade-up">
+                        <div class="step-number" aria-hidden="true">02</div>
+                        <div class="step-icon" aria-hidden="true">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3 class="step-title">Create your weekly plan</h3>
+                            <p class="step-text">Drag subjects into your weekly calendar. Planify helps you balance workload across the week.</p>
+                        </div>
+                    </li>
+
+                    <li class="step-item fade-up">
+                        <div class="step-number" aria-hidden="true">03</div>
+                        <div class="step-icon" aria-hidden="true">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3 class="step-title">Track your progress</h3>
+                            <p class="step-text">Check off tasks, watch your progress grow, and stay motivated with visual achievement tracking.</p>
+                        </div>
+                    </li>
+
+                </ol>
+
+            </div>
+        </section>
+
+        <!--  Testimonials  -->
+        <section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+            <div class="container">
+
+                <div class="section-label fade-up">Student stories</div>
+                <h2 class="section-heading fade-up" id="testimonials-heading">
+                    What students are saying
+                </h2>
+
+                <div class="testimonials-grid">
+
+                    <article class="testimonial-card fade-up" aria-labelledby="testimonial-1">
+                        <div class="testimonial-rating" aria-label="5 out of 5 stars">
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        </div>
+                        <blockquote class="testimonial-quote" id="testimonial-1">
+                            "Planify completely changed how I study. I used to feel overwhelmed every Sunday night. Now I have a clear plan before the week even starts."
+                        </blockquote>
+                        <footer class="testimonial-author">
+                            <div class="testimonial-avatar" aria-hidden="true">S</div>
+                            <div class="testimonial-info">
+                                <cite class="testimonial-name">Sarah M.</cite>
+                                <span class="testimonial-role">Biology student, Year 3</span>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <article class="testimonial-card fade-up" aria-labelledby="testimonial-2">
+                        <div class="testimonial-rating" aria-label="5 out of 5 stars">
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        </div>
+                        <blockquote class="testimonial-quote" id="testimonial-2">
+                            "The progress tracker is the best part. Seeing that bar move forward every day keeps me motivated to keep going. Simple but incredibly effective."
+                        </blockquote>
+                        <footer class="testimonial-author">
+                            <div class="testimonial-avatar" aria-hidden="true">A</div>
+                            <div class="testimonial-info">
+                                <cite class="testimonial-name">Ahmed K.</cite>
+                                <span class="testimonial-role">Engineering student, Year 2</span>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <article class="testimonial-card fade-up" aria-labelledby="testimonial-3">
+                        <div class="testimonial-rating" aria-label="5 out of 5 stars">
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        </div>
+                        <blockquote class="testimonial-quote" id="testimonial-3">
+                            "I tried many planners before. Most were too complicated or too simple. Planify hits the sweet spot — clean, focused, and actually useful."
+                        </blockquote>
+                        <footer class="testimonial-author">
+                            <div class="testimonial-avatar" aria-hidden="true">L</div>
+                            <div class="testimonial-info">
+                                <cite class="testimonial-name">Layla R.</cite>
+                                <span class="testimonial-role">Law student, Year 1</span>
+                            </div>
+                        </footer>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Pricing  -->
+        <section class="pricing" id="pricing" aria-labelledby="pricing-heading">
+            <div class="container">
+
+                <div class="section-label fade-up">Simple pricing</div>
+                <h2 class="section-heading fade-up" id="pricing-heading">
+                    Start free, upgrade when ready
+                </h2>
+                <p class="section-description fade-up">
+                    No credit card required. No hidden fees. Just pick the plan that fits you.
+                </p>
+
+                <div class="pricing-grid">
+
+                    <article class="pricing-card fade-up" aria-labelledby="plan-free">
+                        <div class="pricing-card-header">
+                            <h3 class="pricing-plan-name" id="plan-free">Free</h3>
+                            <div class="pricing-price">
+                                <span class="pricing-amount">$0</span>
+                                <span class="pricing-period">forever</span>
+                            </div>
+                            <p class="pricing-tagline">Perfect for getting started</p>
+                        </div>
+                        <ul class="pricing-features" role="list">
+                            <li>
+                                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                Up to 3 subjects
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                Weekly planner
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                Daily task list
+                            </li>
+                            <li class="is-disabled">
+                                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                                Progress analytics
+                            </li>
+                            <li class="is-disabled">
+                                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                                Pomodoro timer
+                            </li>
+                        </ul>
+                        <a class="btn btn-outline btn-full" href="signup.html">Get started free</a>
+                    </article>
+
+                    <article class="pricing-card pricing-card-featured fade-up" aria-labelledby="plan-pro" aria-label="Recommended plan">
+                        <div class="pricing-badge">Most popular</div>
+                        <div class="pricing-card-header">
+                            <h3 class="pricing-plan-name" id="plan-pro">Pro</h3>
+                            <div class="pricing-price">
+                                <span class="pricing-amount">$4</span>
+                                <span class="pricing-period">/ month</span>
+                            </div>
+                            <p class="pricing-tagline">For serious students</p>
+                        </div>
+                        <ul class="pricing-features" role="list">
+                            <li>
+                                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                Unlimited subjects
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                Weekly planner
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                Daily task list
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                Progress analytics
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                Pomodoro timer
+                            </li>
+                        </ul>
+                        <a class="btn btn-white btn-full" href="signup.html">Start free trial</a>
+                    </article>
+
+                    <article class="pricing-card fade-up" aria-labelledby="plan-team">
+                        <div class="pricing-card-header">
+                            <h3 class="pricing-plan-name" id="plan-team">Study Group</h3>
+                            <div class="pricing-price">
+                                <span class="pricing-amount">$9</span>
+                                <span class="pricing-period">/ month</span>
+                            </div>
+                            <p class="pricing-tagline">For groups up to 5 students</p>
+                        </div>
+                        <ul class="pricing-features" role="list">
+                            <li>
+                                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                Everything in Pro
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                Shared study plans
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                Group progress view
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                Priority support
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                Up to 5 members
+                            </li>
+                        </ul>
+                        <a class="btn btn-outline btn-full" href="signup.html">Get started</a>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Resources  -->
+        <section class="resources" id="resources" aria-labelledby="resources-heading">
+            <div class="container">
+
+                <div class="section-label fade-up">Study smarter</div>
+                <h2 class="section-heading fade-up" id="resources-heading">
+                    Tips to boost your productivity
+                </h2>
+
+                <div class="resources-grid">
+
+                    <article class="resource-card fade-up" aria-labelledby="resource-1">
+                        <div class="resource-card-icon" aria-hidden="true">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <div class="resource-card-content">
+                            <span class="resource-tag">Study tip</span>
+                            <h3 class="resource-card-title" id="resource-1">The 2-minute rule for tasks</h3>
+                            <p class="resource-card-text">If a task takes less than two minutes, do it now. This simple rule prevents small tasks from piling up and overwhelming your list.</p>
+                        </div>
+                    </article>
+
+                    <article class="resource-card fade-up" aria-labelledby="resource-2">
+                        <div class="resource-card-icon" aria-hidden="true">
+                            <i class="fa-solid fa-timer"></i>
+                        </div>
+                        <div class="resource-card-content">
+                            <span class="resource-tag">Technique</span>
+                            <h3 class="resource-card-title" id="resource-2">How to use the Pomodoro technique</h3>
+                            <p class="resource-card-text">Work for 25 minutes, rest for 5. After four cycles take a longer break. This rhythm keeps your focus sharp and prevents mental fatigue.</p>
+                        </div>
+                    </article>
+
+                    <article class="resource-card fade-up" aria-labelledby="resource-3">
+                        <div class="resource-card-icon" aria-hidden="true">
+                            <i class="fa-solid fa-calendar-check"></i>
+                        </div>
+                        <div class="resource-card-content">
+                            <span class="resource-tag">Planning</span>
+                            <h3 class="resource-card-title" id="resource-3">Plan your week every Sunday</h3>
+                            <p class="resource-card-text">A 15-minute weekly review every Sunday sets you up for a calm, productive week. Map out your subjects and protect your study blocks.</p>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="final-cta" id="final-cta" aria-labelledby="cta-heading">
+            <div class="container">
+                <div class="final-cta-content fade-up">
+
+                    <i class="fa-solid fa-graduation-cap final-cta-icon" aria-hidden="true"></i>
+
+                    <h2 class="final-cta-heading" id="cta-heading">
+                        Start organizing your study today
+                    </h2>
+                    <p class="final-cta-description">
+                        Join thousands of students who already use Planify to study smarter, stay focused, and reach their goals.
+                    </p>
+
+                    <a class="btn btn-white btn-large" href="signup.html">
+                        Sign Up Now — It is Free
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+
+                    <p class="final-cta-note">No credit card required. Free plan available forever.</p>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+      <!-- ======================================
+      FOOTER
+      ====================================== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="footer-logo" href="index.html" aria-label="Planify home">
+                        <div class="logo-mark" aria-hidden="true">
+                            <div class="logo-mark-inner">
+                                <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                            </div>
+                            <span class="logo-dot"></span>
+                        </div>
+                        <span class="logo-text">Plan<span>ify</span></span>
+                    </a>
+                    <p class="footer-tagline">Study smarter, not harder.</p>
+                    <div class="footer-social" aria-label="Social media links">
+                        <a href="#" aria-label="Planify on Twitter" class="footer-social-link">
+                            <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" aria-label="Planify on Instagram" class="footer-social-link">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" aria-label="Planify on LinkedIn" class="footer-social-link">
+                            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <nav class="footer-nav" aria-label="Product links">
+                    <h4 class="footer-nav-title">Product</h4>
+                    <ul role="list">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav" aria-label="Account links">
+                    <h4 class="footer-nav-title">Account</h4>
+                    <ul role="list">
+                        <li><a href="signup.html">Sign up</a></li>
+                        <li><a href="signin.html">Sign in</a></li>
+                        <li><a href="#">Settings</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav" aria-label="Company links">
+                    <h4 class="footer-nav-title">Company</h4>
+                    <ul role="list">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Terms of service</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Planify. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- JS -->
+    <script src="assets\js\animations.js"></script>
+    <script src="assets\js\main.js"></script>
+</body>
+</html>
