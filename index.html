@@ -42,6 +42,8 @@
                 <span class="logo-text">Plan<span>ify</span></span>
             </a>
 
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+
             <nav class="navbar-nav" id="navbar-nav" aria-label="Main navigation">
                 <ul class="nav-list" role="list">
                     <li><a class="nav-link" href="#features">Features</a></li>
@@ -50,6 +52,10 @@
                     <li><a class="nav-link" href="#pricing">Pricing</a></li>
                     <li><a class="nav-link" href="#resources">Resources</a></li>
                 </ul>
+                <div class="nav-mobile-actions">
+                    <a class="btn btn-ghost" href="signin.html">Sign in</a>
+                    <a class="btn btn-primary" href="signup.html">Get started</a>
+                </div>
             </nav>
 
             <div class="navbar-actions">
@@ -57,9 +63,9 @@
                 <a class="btn btn-primary" href="signup.html">Get started</a>
             </div>
 
-            <button class="navbar-toggle js-menu-toggle" id="js-menu-toggle" aria-expanded="false" aria-controls="navbar-nav" aria-label="Toggle navigation menu">
+            <label class="navbar-toggle" for="nav-toggle" aria-label="Toggle navigation menu">
                 <i class="fa-solid fa-bars" aria-hidden="true"></i>
-            </button>
+            </label>
 
         </div>
     </header>
@@ -201,7 +207,6 @@
                             You study hard but can not tell if you are actually making progress. There is no feedback loop to keep you motivated.
                         </p>
                     </article>
-
                 </div>
 
             </div>
@@ -430,26 +435,11 @@
                             <p class="pricing-tagline">Perfect for getting started</p>
                         </div>
                         <ul class="pricing-features" role="list">
-                            <li>
-                                <i class="fa-solid fa-check" aria-hidden="true"></i>
-                                Up to 3 subjects
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check" aria-hidden="true"></i>
-                                Weekly planner
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check" aria-hidden="true"></i>
-                                Daily task list
-                            </li>
-                            <li class="is-disabled">
-                                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
-                                Progress analytics
-                            </li>
-                            <li class="is-disabled">
-                                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
-                                Pomodoro timer
-                            </li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i>Up to 3 subjects</li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i>Weekly planner</li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i>Daily task list</li>
+                            <li class="is-disabled"><i class="fa-solid fa-xmark" aria-hidden="true"></i>Progress analytics</li>
+                            <li class="is-disabled"><i class="fa-solid fa-xmark" aria-hidden="true"></i>Pomodoro timer</li>
                         </ul>
                         <a class="btn btn-outline btn-full" href="signup.html">Get started free</a>
                     </article>
@@ -465,26 +455,11 @@
                             <p class="pricing-tagline">For serious students</p>
                         </div>
                         <ul class="pricing-features" role="list">
-                            <li>
-                                <i class="fa-solid fa-check" aria-hidden="true"></i>
-                                Unlimited subjects
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check" aria-hidden="true"></i>
-                                Weekly planner
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check" aria-hidden="true"></i>
-                                Daily task list
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check" aria-hidden="true"></i>
-                                Progress analytics
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check" aria-hidden="true"></i>
-                                Pomodoro timer
-                            </li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i>Unlimited subjects</li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i>Weekly planner</li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i>Daily task list</li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i>Progress analytics</li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i>Pomodoro timer</li>
                         </ul>
                         <a class="btn btn-white btn-full" href="signup.html">Start free trial</a>
                     </article>
@@ -499,26 +474,11 @@
                             <p class="pricing-tagline">For groups up to 5 students</p>
                         </div>
                         <ul class="pricing-features" role="list">
-                            <li>
-                                <i class="fa-solid fa-check" aria-hidden="true"></i>
-                                Everything in Pro
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check" aria-hidden="true"></i>
-                                Shared study plans
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check" aria-hidden="true"></i>
-                                Group progress view
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check" aria-hidden="true"></i>
-                                Priority support
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check" aria-hidden="true"></i>
-                                Up to 5 members
-                            </li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i>Everything in Pro</li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i>Shared study plans</li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i>Group progress view</li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i>Priority support</li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i>Up to 5 members</li>
                         </ul>
                         <a class="btn btn-outline btn-full" href="signup.html">Get started</a>
                     </article>
@@ -665,8 +625,10 @@
             </div>
         </div>
     </footer>
+
     <!-- JS -->
     <script src="assets\js\animations.js"></script>
     <script src="assets\js\main.js"></script>
+
 </body>
 </html>
