@@ -254,8 +254,20 @@
     border-color: var(--color-accent);
     box-shadow: 0 0 0 3px rgba(91, 191, 160, 0.1);
 }
+.form-input.error {
+  border-color: #E53E3E;
+}
 
 /* Password toggle button */
+
+/* hide browser's built-in password toggle */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear,
+input[type="password"]::-webkit-password-toggle-button {
+    display: none;
+    -webkit-appearance: none;
+}
+
 .input-toggle-password {
     position: absolute;
     right: 12px;
