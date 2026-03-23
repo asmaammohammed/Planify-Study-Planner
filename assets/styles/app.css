@@ -1,16 +1,13 @@
-
 .app-body {
     min-height: 100vh;
     background-color: var(--color-bg);
 }
 
-/*  App layout */
 .app-layout {
     display: flex;
     min-height: 100vh;
 }
 
-/* Sidebar  */
 .sidebar {
     width: 240px;
     flex-shrink: 0;
@@ -109,7 +106,6 @@
     border: 2px solid var(--color-surface);
 }
 
-/*  Collapse button  */
 .sidebar-collapse-btn {
     display: flex;
     align-items: center;
@@ -133,7 +129,6 @@
     transform: rotate(180deg);
 }
 
-/*  Mobile close button */
 .sidebar-close {
     display: none;
     align-items: center;
@@ -151,7 +146,6 @@
     color: var(--color-text);
 }
 
-/* Sidebar nav  */
 .sidebar-nav {
     flex: 1;
     padding: 16px 10px;
@@ -220,7 +214,6 @@
     color: #E53E3E;
 }
 
-/* Sidebar footer  */
 .sidebar-footer {
     padding: 10px;
     border-top: 1px solid var(--color-border);
@@ -233,7 +226,6 @@
     gap: 2px;
 }
 
-/*  Sidebar overlay — mobile  */
 .sidebar-overlay {
     display: none;
     position: fixed;
@@ -248,7 +240,6 @@
     opacity: 1;
 }
 
-/*  App main  */
 .app-main {
     flex: 1;
     min-width: 0;
@@ -256,13 +247,13 @@
     flex-direction: column;
     margin-left: 240px;
     transition: margin-left 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-x: hidden;
 }
 
 .app-main.is-collapsed {
     margin-left: 64px;
 }
 
-/*  Top navbar */
 .app-navbar {
     height: 64px;
     background-color: var(--color-surface);
@@ -386,11 +377,11 @@
     color: var(--color-text-sec);
 }
 
-/*  App content */
 .app-content {
     flex: 1;
     padding: 24px;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .app-content-inner {
@@ -399,6 +390,7 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    width: 100%;
 }
 
 .sr-only {
@@ -413,14 +405,12 @@
     border: 0;
 }
 
-/*  Responsive — tablet */
 @media (min-width: 768px) {
     .user-info {
         display: flex;
     }
 }
 
-/*  Responsive — mobile  */
 @media (max-width: 1023px) {
     .sidebar {
         width: 240px;
@@ -476,6 +466,7 @@
         padding: 10px 12px;
     }
 }
+
 @media (max-width: 480px) {
     .app-content {
         padding: 16px;
