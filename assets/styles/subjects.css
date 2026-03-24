@@ -1,0 +1,396 @@
+.subjects-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.subjects-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 4px;
+}
+
+.subjects-subtitle {
+    font-size: 0.875rem;
+    color: var(--color-text-sec);
+    margin: 0;
+}
+
+.subjects-add-btn {
+    flex-shrink: 0;
+}
+
+/* Quick stats */
+.subjects-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.subj-stat {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 14px;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.subj-stat:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(107,95,176,0.1);
+}
+
+.subj-stat-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.0625rem;
+    flex-shrink: 0;
+}
+
+.subj-stat-icon-primary {
+    background-color: var(--color-border);
+    color: var(--color-primary);
+}
+
+.subj-stat-icon-accent {
+    background-color: rgba(91,191,160,0.15);
+    color: var(--color-accent-dark);
+}
+
+.subj-stat-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.subj-stat-value {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: var(--color-text);
+    line-height: 1;
+}
+
+.subj-stat-label {
+    font-size: 0.8125rem;
+    color: var(--color-text-sec);
+}
+
+/*  Subjects grid */
+.subjects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/*  Subject card  */
+.subject-card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.subject-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(107,95,176,0.14);
+}
+
+/* Card top colored band */
+.subject-card-top {
+    padding: 20px 20px 16px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+}
+
+.subject-color-biology  { background: linear-gradient(135deg, #EDE9FF 0%, #D8D0FF 100%); }
+.subject-color-math     { background: linear-gradient(135deg, #D1FAE5 0%, #A7F3D0 100%); }
+.subject-color-english  { background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%); }
+.subject-color-physics  { background: linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 100%); }
+.subject-color-chemistry{ background: linear-gradient(135deg, #FEE2E2 0%, #FECACA 100%); }
+
+.subject-card-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.subject-icon-wrap {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background-color: rgba(255,255,255,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.125rem;
+    color: var(--color-text);
+    backdrop-filter: blur(4px);
+}
+
+/* Difficulty badge */
+.difficulty-badge {
+    display: inline-block;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 3px 9px;
+    border-radius: 999px;
+}
+
+.difficulty-hard   { background: rgba(229,62,62,0.15);   color: #C53030; }
+.difficulty-medium { background: rgba(245,158,11,0.15);  color: #92400E; }
+.difficulty-easy   { background: rgba(91,191,160,0.18);  color: #2D7A62; }
+
+/* Progress ring */
+.subject-progress-ring {
+    position: relative;
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+}
+
+.subject-progress-ring svg {
+    width: 52px;
+    height: 52px;
+    transform: rotate(-90deg);
+}
+
+.ring-track {
+    fill: none;
+    stroke: rgba(255,255,255,0.5);
+    stroke-width: 4;
+}
+
+.ring-fill {
+    fill: none;
+    stroke: rgba(255,255,255,0.9);
+    stroke-width: 4;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.6s ease;
+}
+
+.ring-label {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+/* Card body */
+.subject-card-body {
+    padding: 16px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.subject-name {
+    font-size: 1.0625rem;
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+.subject-desc {
+    font-size: 0.8125rem;
+    color: var(--color-text-sec);
+    line-height: 1.55;
+    margin: 0;
+}
+
+/* Meta row */
+.subject-meta-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.subject-meta-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8125rem;
+    color: var(--color-text-sec);
+}
+
+.subject-meta-item i {
+    font-size: 0.75rem;
+    color: var(--color-primary);
+}
+
+/* Deadline indicator */
+.subject-deadline {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: var(--color-bg);
+    color: var(--color-text-sec);
+    width: fit-content;
+}
+
+.subject-deadline i {
+    font-size: 0.75rem;
+}
+
+.subject-deadline-urgent {
+    background-color: rgba(229,62,62,0.08);
+    color: #C53030;
+}
+
+.subject-deadline-soon {
+    background-color: rgba(245,158,11,0.1);
+    color: #92400E;
+}
+
+/* Card footer */
+.subject-card-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: auto;
+    padding-top: 4px;
+}
+
+.subject-progress-bar {
+    height: 5px;
+    background-color: var(--color-border);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.subject-progress-fill {
+    height: 100%;
+    border-radius: 999px;
+    transition: width 0.5s ease;
+}
+
+.subject-open-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    transition: gap 0.15s ease;
+    width: fit-content;
+}
+
+.subject-open-btn:hover {
+    gap: 10px;
+}
+
+/*  Add subject card  */
+.subject-card-add {
+    background-color: var(--color-surface);
+    border: 2px dashed var(--color-border);
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 32px 20px;
+    cursor: pointer;
+    min-height: 220px;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.subject-card-add:hover {
+    border-color: var(--color-primary);
+    background-color: rgba(107,95,176,0.03);
+}
+
+.subject-add-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 999px;
+    background-color: var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+    font-size: 1.125rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.subject-card-add:hover .subject-add-icon {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.subject-add-label {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.subject-add-hint {
+    font-size: 0.8125rem;
+    color: var(--color-text-sec);
+}
+
+@media (min-width: 768px) {
+    .subjects-stats {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .subjects-header {
+        gap: 12px;
+    }
+
+    .subjects-add-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .subjects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .subjects-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .subj-stat {
+        padding: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .subject-card-top {
+        padding: 16px 16px 12px;
+    }
+
+    .subject-card-body {
+        padding: 14px 16px 16px;
+    }
+}
