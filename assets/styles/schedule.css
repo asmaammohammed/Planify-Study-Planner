@@ -1,4 +1,3 @@
-
 .schedule-topbar {
     display: flex;
     align-items: center;
@@ -99,7 +98,7 @@
     color: #fff;
 }
 
-/* Legend bar*/
+/* Legend bar */
 .legend-bar {
     display: flex;
     align-items: center;
@@ -133,11 +132,11 @@
     font-size: 0.5rem;
 }
 
-.legend-pill-biology  { background: rgba(107,95,176,0.1);  color: #4A3F9F; }
-.legend-pill-math     { background: rgba(91,191,160,0.15); color: #2D7A62; }
-.legend-pill-english  { background: rgba(245,158,11,0.12); color: #92400E; }
-.legend-pill-physics  { background: rgba(96,165,250,0.15); color: #1E40AF; }
-.legend-pill-chemistry{ background: rgba(248,113,113,0.12);color: #991B1B; }
+.legend-pill-biology   { background: rgba(107,95,176,0.1);  color: #4A3F9F; }
+.legend-pill-math      { background: rgba(91,191,160,0.15); color: #2D7A62; }
+.legend-pill-english   { background: rgba(245,158,11,0.12); color: #92400E; }
+.legend-pill-physics   { background: rgba(96,165,250,0.15); color: #1E40AF; }
+.legend-pill-chemistry { background: rgba(248,113,113,0.12);color: #991B1B; }
 
 .legend-total {
     font-size: 0.8125rem;
@@ -146,7 +145,7 @@
     white-space: nowrap;
 }
 
-/*  Calendar outer  */
+/* Calendar outer */
 .cal-outer {
     background-color: var(--color-surface);
     border: 1px solid var(--color-border);
@@ -172,7 +171,7 @@
     flex-direction: column;
 }
 
-/*  Day header row */
+/* Day header row */
 .cal-head {
     display: grid;
     grid-template-columns: 56px repeat(7, 1fr);
@@ -265,7 +264,6 @@
     background-color: transparent;
 }
 
-/* Empty cell  */
 .cal-cell:not(:has(.cal-block)):hover::after {
     content: '+';
     position: absolute;
@@ -376,32 +374,28 @@
     border-left-color: #6B5FB0;
     color: #3D2F9A;
 }
-
 .block-math {
     background-color: rgba(91,191,160,0.15);
     border-left-color: #5BBFA0;
     color: #1D6B53;
 }
-
 .block-english {
     background-color: rgba(245,158,11,0.14);
     border-left-color: #F59E0B;
     color: #7C3A0A;
 }
-
 .block-physics {
     background-color: rgba(96,165,250,0.14);
     border-left-color: #60A5FA;
     color: #1A3FA8;
 }
-
 .block-chemistry {
     background-color: rgba(248,113,113,0.14);
     border-left-color: #F87171;
     color: #881A1A;
 }
 
-/*  Mobile day view */
+/* Mobile day view */
 .mobile-day-view {
     display: none;
     background-color: var(--color-surface);
@@ -652,7 +646,7 @@
     text-align: right;
 }
 
-/* Responsive  tablet */
+/* Tablet */
 @media (min-width: 768px) {
     .week-stats-row {
         grid-template-columns: repeat(4, 1fr);
@@ -663,7 +657,7 @@
     }
 }
 
-/*  Responsive  mobile  */
+/* Mobile */
 @media (max-width: 767px) {
     .schedule-topbar {
         gap: 12px;
@@ -693,8 +687,13 @@
     }
 
     .subject-bar-row {
-        grid-template-columns: 90px 1fr 28px;
+        grid-template-columns: minmax(80px, auto) 1fr 28px;
         gap: 8px;
+    }
+
+    .sbr-name {
+        white-space: normal;
+        word-break: break-word;
     }
 
     .week-summary {
@@ -719,5 +718,10 @@
     .legend-total {
         width: 100%;
         text-align: center;
+    }
+
+    .subject-bar-row {
+        grid-template-columns: minmax(70px, auto) 1fr 24px;
+        gap: 6px;
     }
 }
