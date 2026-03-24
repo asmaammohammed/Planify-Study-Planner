@@ -110,14 +110,18 @@ if (signinForm) {
       document.getElementById("email-error").textContent = "";
     }
 
-    // Password
-    if (!passwordInputSignIn.value) {
-      document.getElementById("password-error").textContent =
-        "Please enter your password.";
-      valid = false;
-    } else {
-      document.getElementById("password-error").textContent = "";
-    }
+// Password
+if (!passwordInputSignIn.value) {
+  document.getElementById("password-error").textContent =
+    "Please enter your password.";
+  valid = false;
+} else if (passwordInputSignIn.value.length < 8) {
+  document.getElementById("password-error").textContent =
+    "Password must be at least 8 characters.";
+  valid = false;
+} else {
+  document.getElementById("password-error").textContent = "";
+}
 
     // Redirect if valid
     if (valid) {
