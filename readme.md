@@ -5,7 +5,7 @@ A study planner for university students. Built to help you stay on top of your s
 
 **Live -** [planify-study-planner.vercel.app](https://planify-study-planner.vercel.app)
 
-![Planify Mockup](assets\images\screenshots\mockup.png)
+![Planify Mockup](assets/images/screenshots/mockup.png)
 
 ---
 
@@ -35,13 +35,13 @@ So I built Planify. A simple, focused space to plan your study week and actually
 ## Screenshots
 
 ### Dashboard
-![Dashboard](assets\images\screenshots\dashboard.png)
+![Dashboard](assets/images/screenshots/dashboard.png)
 
 ### Tasks
-![Tasks](assets\images\screenshots\tasks.png)
+![Tasks](assets/images/screenshots/tasks.png)
 
 ### Schedule
-![Schedule](assets\images\screenshots\schedule.png)
+![Schedule](assets/images/screenshots/schedule.png)
 
 ---
 
@@ -95,7 +95,7 @@ planify/
 
 Honestly this project pushed me more than I expected. A few things that stuck with me:
 
-- Responsive design is harder than it looks — especially when you care about how it feels on mobile, not just that it fits
+- Responsive design is harder than it looks - especially when you care about how it feels on mobile, not just that it fits
 - Keeping CSS organized across 10 pages takes real discipline
 - Accessibility isn't extra work, it's just part of building things properly
 - The gap between "it works" and "it feels right" is where most of the real work happens
